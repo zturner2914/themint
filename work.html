@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Work</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+  </head>
+  <body>
+
+
+    <header class="clearfix">
+      <div class="custom-container">
+        <a href="index.html">
+          <div class="left-nav">
+            <img src="img/mint-logo.png" alt="the mint">
+          </div>
+        </a>
+        <div class="hamburger-icon clearfix">
+          <svg id="hamOne" class="ham-bar"><rect class="rected" height="3" /></svg>
+          <svg id="hamTwo" class="ham-bar"><rect width="19" height="3" /></svg>
+          <svg id="hamThree" class="ham-bar"><rect class="rected-two" height="3" /></svg>
+        </div>
+        <nav>
+          <div class="container">
+            <ul class="main-menu">
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="work.html">WORK</a></li>
+              <li><a href="talent.html">TALENT</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+          </div>
+          <div class="container">
+
+            <div class=" nav-footer">
+              <div class="row">
+                <div class="col-sm-6">
+                  <p class="green-p">studio: <a href="tel:612-342-9788">[612] 342-9788</a></p>
+                  <p class="green-p">mobile: <a href="tel:612-270-9071">[612] 270-9071</a></p>
+                </div>
+                <div class="col-sm-6">
+                  <p class="green-p"><a href="mailto:kditoro@thestudiomint.com">kditoro@thestudiomint.com</a></p>
+                  <p class="green-p"><a target="_blank" href="https://www.google.com/maps/place/150+S+5th+St+%23900,+Minneapolis,+MN+55402/data=!4m2!3m1!1s0x52b3329bb6d67ea5:0xdab0808c6f6fdd49?sa=X&ved=0ahUKEwj9p_DP29nWAhVOfiYKHXJMCbsQ8gEIJTAA">150 S. 5th Street, Suite 900 Minneapolis, MN 55402</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+
+    <div class="video-wrap">
+      <video id="this2" loop>
+        <source id="this1" src="videos/video1.mp4">
+        </video>
+      </div>
+      <script type="text/javascript">
+      getRandomArbitrary(1,5);
+      function getRandomArbitrary(min, max) {
+        var myRand = Math.random() * (max - min) + min;
+        myRand = Math.round(myRand);
+        var setEl = document.getElementById("this1");
+        var vidTag = document.getElementById("this2");
+        console.log(myRand);
+        if(myRand == 1){
+          vidTag.setAttribute("poster", "videos/video-1.jpg")
+          setEl.setAttribute("src", "videos/video1.mp4");
+        }else if (myRand == 2){
+          vidTag.setAttribute("poster", "videos/video-2.jpg")
+          setEl.setAttribute("src", "videos/video2.mp4");
+        }else if (myRand == 3){
+          vidTag.setAttribute("poster", "videos/video-3.jpg")
+          setEl.setAttribute("src", "videos/video3.mp4");
+        }else if (myRand == 4){
+          vidTag.setAttribute("poster", "videos/video-4.jpg")
+          setEl.setAttribute("src", "videos/video4.mp4");
+        }else{
+          vidTag.setAttribute("poster", "videos/video-5.jpg")
+          setEl.setAttribute("src", "videos/video5.mp4");
+        }
+        vidTag.load();
+        vidTag.play();
+
+      }
+      </script>
+    <div id="home-hero">
+      <div class="home-hero-holder" style="background-image:url('videos/mobile-hero-2.jpg');"></div>
+      <div class="container">
+          <div class="work-hero-copy">
+            <div class="left-bracket">
+              <img src="img/left-bracket.png" alt="">
+            </div>
+            <h1>What we’re all about.</h1>
+            <div class="right-bracket">
+              <img src="img/right-bracket.png" alt="">
+            </div>
+            <div class="hero-p-copy">
+                <p>We believe in delivering a great creative product with speed, efficiency, and savings.</p>
+            </div>
+          </div>
+      </div>
+  </div>
+
+
+  <!-- PAGE CONTENT -->
+  <div>
+    <div class="mobile-green-box">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5 seconday-img-container no-padding">
+            <img class="img-responsive" src="img/Work_secondaryimage.png" alt="">
+          </div>
+          <div class="col-sm-7 desktop-green-box">
+            <h2>Why we’re all about it.</h2>
+            <p>Good, fast, cheaper. Seems like everywhere you turn, somebody needs some quick content these days. It’s the new normal. Brands are looking for integrated solutions that will connect with their consumers in a sort of real time marketing approach. And to keep up with real time, they need these solutions fast. Because of this, we all need to work differently.</p>
+            <p>That’s why our process is set up to be tailored to the specific needs of each project, and to evolve with the ever-changing branding atmosphere. What’s on your to-make list?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="drag-images">
+    <div id="drag-icon">
+      <div class="drg-copy">Drag</div>
+    </div>
+    <div class="di-cont grabbable">
+      <div class="di-single-holder">
+        <div class="di-single">
+          <img src="img/carousel-imgs/betty.jpg" class="img-responsive">
+          <p>Videos</p>
+        </div>
+        <div class="di-single">
+          <img src="img/carousel-imgs/finnwall.jpg" class="img-responsive">
+          <p>Design</p>
+        </div>
+        <div class="di-single">
+          <img src="img/carousel-imgs/howto.jpg" class="img-responsive">
+          <p>How-Tos</p>
+        </div>
+        <div class="di-single">
+          <img src="img/carousel-imgs/kubota.jpg" class="img-responsive">
+          <p>Print and Digital</p>
+        </div>
+        <div class="di-single">
+          <img src="img/carousel-imgs/mhy.jpg" class="img-responsive">
+          <p>Campaigns</p>
+        </div>
+        <div class="di-single">
+          <img src="img/carousel-imgs/nibblr.jpg" class="img-responsive">
+          <p>Digital Design</p>
+        </div>
+        <div class="di-single">
+          <img src="img/carousel-imgs/pfchang.jpg" class="img-responsive">
+          <p>Web Series</p>
+        </div>
+        <div class="di-single">
+          <img src="img/carousel-imgs/photos.jpg" class="img-responsive">
+          <p>Photography</p>
+        </div>
+        <div class="di-single">
+          <img src="img/carousel-imgs/progresso.jpg" class="img-responsive">
+          <p>Banner Ads</p>
+        </div>
+        <div class="di-single">
+          <img src="img/carousel-imgs/rf.jpg" class="img-responsive">
+          <p>Animation</p>
+        </div>
+        <div class="di-single">
+          <img src="img/carousel-imgs/yoplait.jpg" class="img-responsive">
+          <p>Behind the Scenes</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>Candy for your eyes. Otherwise known as eye-candy.</h2>
+          <p>See our full reel here!</p>
+        </div>
+        <div class="col-sm-12">
+          <img src="img/Motorcycle.png" class="img-full" alt="">
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <p>studio: <a href="tel:612-342-9788">[612] 342-9788</a></p>
+            <p>mobile: <a href="tel:612-342-9788">[612] 270-9071</a></p>
+          </div>
+          <div class="col-sm-8">
+            <p><a target="_blank" href="mailto:kditoro@thestudiomint.com">kditoro@thestudiomint.com</a></p>
+            <p><a target="_blank" href="https://www.google.com/maps/place/150+S+5th+St+%23900,+Minneapolis,+MN+55402/data=!4m2!3m1!1s0x52b3329bb6d67ea5:0xdab0808c6f6fdd49?sa=X&ved=0ahUKEwj9p_DP29nWAhVOfiYKHXJMCbsQ8gEIJTAA">150 S. 5th Street, Suite 900 Minneapolis, MN 55402</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script> -->
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/drag-slider.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/Draggable.min.js"></script>
+    <script src="js/ThrowPropsPlugin.min.js"></script>
+  	<script src="js/main.js"></script>
+
+  </body>
+</html>
